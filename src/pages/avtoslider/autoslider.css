@@ -76,11 +76,38 @@
 
 }
 
-@media screen and (max-width: 1200px) {
-   .slider-info-container {
+@media screen and (max-width: 1400px) {
+   .slider-info-container  {
+    width: 99w;
+    background-color: aquamarine;
+    padding-left: calc(5vw + 1px);
+    padding-right:calc(5vw + 1px) ;
+   }
+   .info-container{
+    width: 100%;
+    background-color: blue;
+   }
+  .info{
+    font-size: 30px;
+  }
+  .auto-slider-container{
     width: 100vw;
     height: auto;
     max-width: 100%;
-    padding: 1vw;
-   }
+  
 }
+
+}
+@media screen and (max-width: 1400px) {
+    .info-btn{
+        display: none;
+    }
+    .sliders{
+        width: 280px;
+        height: 280px;
+    }
+    .sliders img{
+        width: 100%;
+        height: 100%;
+    }
+ }
