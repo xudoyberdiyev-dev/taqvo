@@ -11,7 +11,7 @@ const AutoSlider = () => {
         <div className='slider-info-container'>
            <div className='info-container'>
             <div className='info-text'>
-            <p className='info'>{l.avtoSliderTitle}</p>
+            <p className='info' style={{color:"wheat"}}>{l.avtoSliderTitle}</p>
             </div>
             <div className='info-btn'>
                 <button><a href="#">{l.avtoSliderInsta}</a></button>

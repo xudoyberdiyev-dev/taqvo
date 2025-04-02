@@ -1,8 +1,27 @@
-.primary-div{
+.primary-div {
     width: 100%;
     height: 255px;
+    background-color: aqua;
+    display: flex; /* Element ichidagi rasmni to‘liq egallash uchun */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Kerak bo‘lsa, pastki bo‘sh joyni kesish uchun */
 }
-.primary-div img{
+
+.primary-div img {
     width: 100%;
     height: 100%;
+    display: block; /* Inline-block bo‘sh joylarni oldini olish uchun */
+    object-fit: cover; /* Rasmni konteynerga to‘liq sig‘dirish */
+}
+
+@media screen and (max-width: 1300px) {
+    .primary-div {
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+   
 }
