@@ -1,0 +1,120 @@
+.contact-primary{
+    width: 100%;
+    height: auto;
+    padding: 100px 0 20px 0;
+    background:rgb(0,0,0,0.3) url('https://www.aqvo.uz/assets/10-BSwqZfTZ.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.contact-img{
+    width: 100%;
+    height: 550px;
+}
+.contact-container{
+    width: 1200px;
+    height: 530px;
+    margin: auto;
+}
+.contact-section{
+    width: 1160px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-abou{
+    width: 45%;
+    height: 100%;
+}
+.contact-register{
+    width:42% ;
+    height: 100%;
+}
+.contact-title{
+    width: 100%;
+    height: 96px;
+}
+.contact-title p{
+    font-size: 32px;
+    font-weight: 550;
+    color: white;
+}
+.contact-title .contact-about{
+    width: 100%;
+    height: 135px;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    line-height: 21px;
+    color: white;
+}
+._contact{
+    width: 100%;
+    height: 150px;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+._contact p{
+    font-size: 15px;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.input-style {
+    background: transparent;
+    border: none;
+    height: 50px;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 225px;
+}
+
+.input-style::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input-container-area {
+    width: 100%;
+    padding-top: 50px;
+}
+.input-style-area{
+    background: transparent;
+    border: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 120px;
+}
+.submit-button{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.submit-button button{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: none;
+    cursor: pointer;
+}

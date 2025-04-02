@@ -1,0 +1,39 @@
+{
+    "navTile1":"Bosh Sahifa",
+    "navtitle2":"Biz haqimizda",
+    "navBtn":"Bog'lanish",
+
+    "primaryTextSlider":"MAHSULOTLAR! SFATLI VA ISHONCHLI! TABIIY",
+    "primaryText":"AQVO – O‘zbekistonda birinchi bo‘lib sifat va halollikni o‘zida mujassam etgan, jiz mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi yetakchi brend.",
+    "primaryButtonText":"Buyurtma",
+
+    "sliderTitle1":"AQVO BRENDI HAQIDA",
+    "sliderText1":"Aqvo – sifat va halollikni o‘zida mujassam etgan, innovatsion yondashuv orqali mahsulotlarini yangicha ta’m va zamonaviy dizaynda taqdim etuvchi brend. O‘zbekistonda birinchi bo‘lib jiz mahsulotlarini yuqori sifat va halollik tamoyillariga asoslangan holda ishlab chiqarishni yo‘lga qo‘ygan Aqvo, mijozlar ishonchini qozonib kelmoqda.",
+    "sliderTitle2":"MAHSULOT TURLARI",
+    "sliderText2":"Aqvo brendi hozirda mol go‘shtli, tovuq go‘shtli va qo‘y go‘shtli mahsulotlar bilan iste’molchilarga xizmat ko‘rsatmoqda. Har bir mahsulotimiz o‘ziga xos yuqori sifat, yangicha ta’m va halollik tamoyillariga asoslangan holda ishlab chiqariladi. Aqvo – bu mazali va ishonchli mahsulotlarning yaqqol timsoli.",
+    "sliderTitle3":"YETKAZIB BERISH KO‘LAMI",
+    "sliderText3":"Aqvo brendi o‘z mahsulotlarini keng hududlarga yetkazib berishni tashkil etib, sifat va tezkorlikni birinchi o‘ringa qo‘yadi. Bizning yetkazib berish tarmog‘imiz orqali mahsulotlar O‘zbekistonning barcha hududlariga o‘z vaqtida yetib boradi. Aqvo – har doim sizga yaqin, har doim ishonchli.",
+
+    "avtoSliderTitle":"SIZNING AQVO BILAN LAHZALARINGIZ",
+    "avtoSliderInsta":"Bizning Instagram",
+    "avtoSliderTg":"Bizning Telegram",
+
+    "contactTitle":"AQVO bilan yangicha ta’mni his eting.",
+    "contactText":"Aqvo brendi sizni yangi ta'mlarni kashf etishga taklif qiladi. Bizning mahsulotlarimiz har bir iste’molchiga sifatli va innovatsion yondashuv orqali yangi, o‘ziga xos ta’mni taqdim etadi. Aqvo – bu nafaqat ta’m, balki sog‘lom va halol mahsulotlar bilan yangi tajribani his qilish imkoniyati. Yangi ta’mni biz bilan birga kashf eting va haqiqiy sifatni his eting!",
+    "contactAbout":"Bog‘lanish uchun telefon raqamlarimiz:",
+    "contactTel1":"Tel: +998957724444",
+    "contactTel2":"Tel: +998996440101",
+    "name":"Ismingiz",
+    "surname":"Familyangiz",
+    "phone":"elifon raqamigiz",
+    "username":"Telegram username",
+    "filed":"Hudud",
+    "select":"Ximat turini tanlang",
+    "text":"Xabar",
+    "send":"Yuborish",
+
+    "cvTitle":"BIZNING SERTIFIKATLARIMIZ",
+
+    "footerTitle1":"Siz izlagan ta'm, sifat, poklik va o‘zgachalik... Barchasi bir nuqtada jamlanib, “Aqvo”'ga aylanadi!",
+    "footerTitle2":"© Barcha huquqlar himoyalangan"
+}
