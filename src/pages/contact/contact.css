@@ -119,7 +119,6 @@
     cursor: pointer;
 }
 @media screen and (max-width:1200px) {
-  
     .contact-section {
         background-color: aqua;
     }
