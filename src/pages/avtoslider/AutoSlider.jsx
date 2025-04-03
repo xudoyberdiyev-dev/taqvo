@@ -14,8 +14,8 @@ const AutoSlider = () => {
             <p className='info' style={{color:"wheat"}}>{l.avtoSliderTitle}</p>
             </div>
             <div className='info-btn'>
-                <button><a href="#">{l.avtoSliderInsta}</a></button>
-                <button><a href="#">{l.avtoSliderTg}</a></button>
+              <button><a href="#">{l.avtoSliderInsta}</a></button>
+              <button><a href="#">{l.avtoSliderTg}</a></button>                
             </div>
            </div>
         </div>
@@ -37,6 +37,10 @@ const AutoSlider = () => {
               ))}
             </Marquee>
         </div>
+        <div className='info-btns'>
+              <button><a href="#">{l.avtoSliderInsta}</a></button>
+              <button><a href="#">{l.avtoSliderTg}</a></button>                
+            </div>
     </div>
   )
 }
