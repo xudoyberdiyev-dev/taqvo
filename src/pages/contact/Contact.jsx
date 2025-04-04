@@ -147,7 +147,74 @@ const Contact = () => {
               </div>
             </div>
             {/*  */}
-           
+            <div className="contact-registers">
+              <div className="input-containers">
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  className="input-styles"
+                  placeholder={l.name}
+                />
+                
+                <input
+                  value={surname}
+                  onChange={(e) => setSurname(e.target.value)}
+                  type="text"
+                  className="input-styles"
+                  placeholder={l.surname}
+                />
+              </div>
+              <div className="input-containers">
+                <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  type="text"
+                  className="input-styles"
+                  placeholder={l.phone}
+                />
+                <input
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  type="text"
+                  className="input-styles"
+                  placeholder={l.username}
+                />
+              </div>
+              <div className="input-containers">
+                <input
+                  value={fileds}
+                  onChange={(e) => setFileds(e.target.value)}
+                  type="text"
+                  className="input-styles"
+                  placeholder={l.filed}
+                />
+                <select
+                  className="input-style"
+                  onChange={(e) => setChoes(e.target.value)}
+                >
+                  <option value="">Xizmat turini tanlang</option>
+                  <option value="Mahsulot" style={{ color: "black" }}>
+                    Mahsulot
+                  </option>
+                  <option value="Franshiza" style={{ color: "black" }}>
+                    Franshiza
+                  </option>
+                </select>
+              </div>
+              <div className="input-container-areas">
+                <textarea
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
+                  type="text"
+                  className="input-style-areas"
+                  placeholder={l.text}
+                ></textarea>
+              </div>
+              <div className="submit-buttons">
+                <button onClick={sendMessage}>{l.send}</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
