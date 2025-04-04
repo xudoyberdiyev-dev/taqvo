@@ -118,8 +118,29 @@
     border: none;
     cursor: pointer;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
+    .contact-register {
+        display: none; /* Register qismi yo‘qoladi */
+    }
+
     .contact-section {
+        display: flex;
+        justify-content: center; /* Markazga joylash */
+        align-items: center;
+        width: 100vw;
         background-color: aqua;
+    }
+
+    .contact-abou {
+        width: 90%; /* Har px kamayganda moslashadi */
+        max-width: 100%;
+        text-align: center; /* Matnni o‘rtaga joylashtirish */
+    }
+}
+
+/* Ekran kichraygan sari contact-abou ham mos ravishda kichrayishi */
+@media screen and (max-width: 750px) {
+    .contact-abou {
+        width: 95%;
     }
 }

@@ -146,6 +146,8 @@ const Contact = () => {
                 <button onClick={sendMessage}>{l.send}</button>
               </div>
             </div>
+            {/*  */}
+           
           </div>
         </div>
       </div>
