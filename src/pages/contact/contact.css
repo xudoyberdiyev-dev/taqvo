@@ -1,70 +1,81 @@
-.contact-primary{
+/* Asosiy tartib */
+.contact-primary {
     width: 100%;
-    height: auto;
     padding: 100px 0 20px 0;
-    background:rgb(0,0,0,0.3) url('https://www.aqvo.uz/assets/10-BSwqZfTZ.jpg');
+    background: rgb(0, 0, 0, 0.3) url('https://www.aqvo.uz/assets/10-BSwqZfTZ.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-blend-mode: darken;
 }
-.contact-img{
+
+.contact-img {
     width: 100%;
     height: 550px;
 }
-.contact-container{
-    width: 1200px;
-    height: 530px;
+
+.contact-container {
+    max-width: 1200px;
     margin: auto;
+    height: auto;
 }
-.contact-section{
-    width: 1160px;
-    height: 100%;
+
+.contact-section {
+    max-width: 1160px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
 }
-.contact-abou{
+
+/* Chap va o‘ng bo‘limlar */
+.contact-abou,
+.contact-register {
     width: 45%;
     height: 100%;
 }
-.contact-register{
-    width:42% ;
-    height: 100%;
-}
-.contact-title{
+
+.contact-title {
     width: 100%;
-    height: 96px;
+    height: auto;
 }
-.contact-title p{
+
+.contact-title p {
     font-size: 32px;
     font-weight: 550;
     color: white;
 }
-.contact-title .contact-about{
+
+.contact-title .contact-about {
     width: 100%;
-    height: 135px;
+    height: auto;
     font-size: 16px;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0;
     line-height: 21px;
     color: white;
 }
-._contact{
+
+._contact {
     width: 100%;
-    height: 150px;
-    padding: 60px 0 0 0;
+    height: auto;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
 }
-._contact p{
+
+._contact p {
     font-size: 15px;
+    color: white;
 }
+
+/* Inputlar */
 .input-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
     padding-top: 20px;
 }
 
@@ -78,7 +89,8 @@
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-    width: 225px;
+    width: 100%;
+    max-width: 225px;
 }
 
 .input-style::placeholder {
@@ -91,9 +103,9 @@
     width: 100%;
     padding-top: 50px;
 }
-.input-style-area{
+
+.input-style-area {
     background: transparent;
-    border: none;
     border: 2px solid white;
     border-radius: 10px;
     outline: none;
@@ -103,12 +115,13 @@
     width: 100%;
     height: 120px;
 }
-.submit-button{
+
+.submit-button {
     width: 100%;
-    height: auto;
     padding-top: 20px;
 }
-.submit-button button{
+
+.submit-button button {
     width: 100%;
     height: 45px;
     border-radius: 8px;
@@ -117,4 +130,46 @@
     background-color: rgb(255, 136, 0);
     border: none;
     cursor: pointer;
+}
+
+/* ✅ Media 960px uchun: tagma-tag joylashadi */
+@media screen and (max-width: 960px) {
+    .contact-primary{
+        width: 100%;
+        height: 1100px;
+    }
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-abou,
+    .contact-register {
+        width: 70%;
+    }
+
+    .contact-container,
+    .contact-section {
+        width: 100%;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-style {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:850px) {
+    .contact-primary{
+        height: 1200px;
+    }
+}
+@media screen and (max-width:530px) {
+    .contact-primary{
+        height: 1300px;
+    }
 }

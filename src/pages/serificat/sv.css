@@ -9,7 +9,7 @@
     background-blend-mode: darken;
 }
 .sv-secion{
-    width:1200px;
+    width:100%;
     height: 530px;
     margin: auto;
     padding: 0 20px 0 20px;
@@ -26,15 +26,61 @@
     padding-bottom:20px;
     text-align: center;
 }
-.sv{
-    width: 100%;
-    height: 100%;
+.sv {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;  /* Bu rasmning uzunligi va yuqoriga tushishini ta'minlaydi */
     justify-content: space-between;
+    gap: 20px;  /* Elementlar orasidagi bo'shliq */
+    width: 100%;
+    height: auto;
+  }
+  
+  .sv img {
+    width: 100%; /* Rasmni konteynerning kengligiga moslashtiradi */
+    max-width: 275px;  /* Maksimal kenglikni cheklaydi */
+    height: auto;  /* Balandlikni saqlash */
+    transition: all 0.3s ease;  /* Smooth o‘zgarishlar */
+  }
+
+  @media screen and (max-width: 1300px) {
+    .serifika-primary {
+        width: 100vw;
+        height: auto;
+        max-width: 100%;
+        box-sizing: border-box;  /* Bo'shliq va paddinglarni to'g'ri hisoblaydi */
+    }
+
+    .sv-body {
+        width: 93vw;
+        max-width: 100%;
+        box-sizing: border-box;  /* Padding va marginlarni to'g'ri hisoblaydi */
+    }
+
+    .sv {
+        width: 100vw;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .sv img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        box-sizing: border-box;  /* Rasmning kengligi va paddinglarni to'g'ri hisoblaydi */
+    }
 }
-.sv img{
-    width: 275px;
-    height: 388px;
+@media screen and (max-width:930px) {
+    .serifika-primary{
+        height: 800px;
+    }
+}
+@media screen and (max-width:450px) {
+    .serifika-primary{
+        height: 1400px;
+
+    }
 }
 
