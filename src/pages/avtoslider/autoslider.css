@@ -1,78 +1,108 @@
-.auto-slider-primary{
+.auto-slider-primary {
     width: 100%;
-    height: auto;
     padding-top: 50px;
     background-color: #991B1B;
+}
 
-}
-.slider-info-container{
+/* Slider info konteyneri */
+.slider-info-container {
     width: 100%;
-    height: 130px;
-    padding: 0 200px 0 200px;
+    max-width: 1400px;
+    margin: auto;
+    height: auto;
+    padding: 0 5vw; /* Responsiv padding */
 }
-.info-container{
-    width: 1160px;
-    height: 100%;
+
+.info-container {
     display: flex;
+    flex-wrap: wrap; /* Responsiv holatda ustma-ust joylashadi */
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
-}
-.info-text{
-    width: 415px;
-    height: 100px;
-}
-.info{
-    font-size: 32px;
-    line-height: 50px;
-}
-.info-btn{
-    width: 260px;
-    height: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.info-btn button{
-    width: 100%;
-    height: 42%;
-    border-radius: 50px;
-    border:  solid 1.2px rgb(255, 255, 255);
-    background-color: #991B1B;
+    gap: 20px;
+    padding: 0 1rem;
 }
 
-.info-btn button a{
+/* Matn */
+.info-text {
+    flex: 1 1 300px;
+    max-width: 415px;
+}
+
+.info {
+    font-size: clamp(1.5rem, 2.5vw, 32px); /* Har xil ekranlarda moslashadi */
+    line-height: 1.5;
+    color: white;
+}
+
+/* Tugmalar */
+.info-btn {
+    flex: 1 1 250px;
+    max-width: 260px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-btn button {
+    width: 100%;
+    height: 42px;
+    border-radius: 50px;
+    border: 1.2px solid white;
+    background-color: #991B1B;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info-btn button:hover {
+    background-color: #7c1616;
+}
+
+.info-btn button a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: clamp(0.85rem, 2vw, 15px);
     font-weight: bold;
 }
 
-.auto-slider-container{
+/* Slayderlar konteyneri */
+.auto-slider-container {
     width: 100%;
-    height: auto;
-    padding: 70px 0 50px 0;
+    padding: 70px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-.sliders{
-    width: 300px;
-    height: 300px;
+
+/* Katta slayder */
+.sliders {
+    width: clamp(200px, 30vw, 300px);
+    aspect-ratio: 1 / 1;
     border-radius: 30px;
+    overflow: hidden;
     margin: 10px;
 }
-.sliders img{
+
+.sliders img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 30px;
 }
-.slider-mini{
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-}
-.slider-mini img{
-    width: 100%;
-    height: 100%;
+
+/* Kichik slayder */
+.slider-mini {
+    width: clamp(150px, 20vw, 200px);
+    aspect-ratio: 1 / 1;
     border-radius: 20px;
-
+    overflow: hidden;
+    margin: 7px;
 }
 
+.slider-mini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}

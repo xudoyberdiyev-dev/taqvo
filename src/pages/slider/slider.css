@@ -1,59 +1,45 @@
-.slider{
+.slider {
     width: 100%;
     height: auto;
-    overflow: hidden; /* Kerak bo‘lsa, pastki bo‘sh joyni kesish uchun */
+    overflow: hidden;
+}
 
-}
-.slider-1{
+.slider-1,
+.slider-2,
+.slider-3 {
     width: 100%;
-    height: 600px;
-    background-image: url('../../assets/images/aqvobonka.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
-  
-}
-.slider-2{
-    width: 100%;
-    height: 600px;
+    height: 70vh; /* 600px o‘rniga, ekranga mos */
     background-image: url('../../assets/images/aqvobonka.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.slider-3{
-    width: 100%;
-    height: 600px;
-    background-image: url('../../assets/images/aqvobonka.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.slide-title{
+
+/* Slider matni joylashuvi */
+.slide-title {
     margin: auto;
-    width: 55%;
-    height: auto;
-    padding-top: 150px;
+    width: 90%; /* Responsiv width */
+    padding-top: 10vh; /* Ekran bo‘yiga qarab yuqoridan bo‘sh joy */
 }
-.slide-text1{
+
+/* Katta matn */
+.slide-text1 {
     width: 100%;
-    height: auto;
-    padding: 5px 5px 5px 5px;
-    font-size: 76px;
+    padding: 5px;
+    font-size: clamp(2rem, 8vw, 76px); /* Katta ekran: 76px, kichikda avtomatik kichrayadi */
     color: white;
     font-weight: bold;
     font-family: sans-serif;
     text-align: center;
 }
-.slide-text2{
+
+/* Kichik matn */
+.slide-text2 {
     margin: auto;
     width: 80%;
-    height: auto;
-    font-size: 20px;
-    font-family: sans-serif;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
+    font-size: clamp(1rem, 4vw, 20px); /* Har ekranda proporsional */
     color: white;
+    font-family: sans-serif;
     text-align: center;
 }
-
