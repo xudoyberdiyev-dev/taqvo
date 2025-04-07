@@ -37,10 +37,7 @@ const AutoSlider = () => {
               ))}
             </Marquee>
         </div>
-        <div className='info-btns'>
-              <button><a href="#">{l.avtoSliderInsta}</a></button>
-              <button><a href="#">{l.avtoSliderTg}</a></button>                
-            </div>
+        
     </div>
   )
 }

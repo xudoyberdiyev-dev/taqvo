@@ -5,56 +5,67 @@
     display: flex;
     justify-content: center;
 }
+
 .dashboard-section{
     width: 100%;
 }
+
 .dashboard-text{
     width: 100%;
     position: absolute;
     top: 35%;
-    height: 243px;
+    height: auto; /* Auto height for responsiveness */
     z-index: 1;
 }
+
 .text{
     font-family: sans-serif;
     text-align: center;
     color: white;
-    font-size: 162px;
+    font-size: 10vw; /* Font size responsive to screen size */
 }
+
 .dashboard-about{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin: auto;
-    width: 73%;
+    width: 80%; /* Adjust width to 80% */
     height: 100vh;
-    padding: 0px 0px 56px 0px;
+    padding: 0 0 5vh 0; /* Using vh for bottom padding */
 }
+
 .dashboard-about-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .about-text{
-    width: 350px;
-    height: 120px;
+    width: 80%; /* Using % for responsive width */
+    height: auto; /* Auto height for responsiveness */
+    max-width: 350px; /* Max width to prevent overflow */
 }
+
 .about-text p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.2rem; /* Rem units for font size */
+    line-height: 1.5; /* Relative line-height */
     color: white;
 }
+
 .about-cercle{
-    width: 158px;
-    height: 158px;
+    width: 40vw; /* Responsive width relative to screen width */
+    height: 40vw; /* Keeping it square, relative to screen size */
+    max-width: 158px;
+    max-height: 158px;
     border-radius: 50%;
     border: solid 1.4px white;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 .logo-circle{
     display: grid;
     place-items: center;
@@ -62,21 +73,23 @@
     height: 93%;
     border-radius: 50%;
     background-color: #6c0606;
-    padding-top: 10px;
+    padding-top: 2vh; /* Using vh for padding */
 }
+
 .logo-circle img{
     width: 75%;
     height: 75%;
 }
+
 .logo-circle::after {
     content: attr(data-text);
     color: white;
-    font-size: 18px;
+    font-size: 2vw; /* Font size responsive to screen size */
     position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
-    
 }
+
 [data-lang="uzb"] .logo-circle::after {
     content: "Buyurtmalar";
 }
@@ -88,6 +101,7 @@
 [data-lang="rus"] .logo-circle::after {
     content: "Заказы";
 }
+
 .logo-circle:hover {
     background-color: #8c6e4c; 
     cursor: pointer;
@@ -99,38 +113,4 @@
 
 .logo-circle:hover::after {
     opacity: 1;
-}
-
-@media screen and (max-width:1200px) {
-    .text{
-        font-size: 120px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-  .dashboard-text{
-    top: 520px;
-  }
-  .text{
-    font-size: 105px;
-  }
-  .dashboard-about{
-    width: 100%;
-    height: 350px;
-    margin-top: 150px;
-  }
- .dashboard-about .dashboard-about-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-
-  .about-text p{
-    width: 120%;
-    height: 96px;
-    font-size: 16px;
-  }
-
-
 }
