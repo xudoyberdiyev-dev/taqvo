@@ -114,3 +114,54 @@
 .logo-circle:hover::after {
     opacity: 1;
 }
+
+
+@media screen and (max-width: 960px) {
+    .dashboard-about {
+        padding-bottom: 8vh;
+        height: auto;
+        
+    }
+
+    .dashboard-about-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px; /* elementlar orasida bo‘shliq */
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .about-text {
+        width: 90%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
+    }
+
+    .about-cercle {
+        width: 150px;
+        height: 150px;
+        max-width: none;
+        max-height: none;
+    }
+
+    .logo-circle::after {
+        font-size: 1rem;
+    }
+
+    .dashboard-text{
+        margin-top: 250px;
+        font-size: clamp(1.5rem, 8vw, 10rem); /* kichik ekranda kichrayadi, katta ekranda kattalashadi */
+        color: white;
+        text-align: center;
+    }
+    .dashboard-text p {
+        font-size: 10vw; /* 8% ekran kengligidan */
+    }
+    
+    
+}

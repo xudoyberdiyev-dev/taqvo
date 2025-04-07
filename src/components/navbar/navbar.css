@@ -15,6 +15,7 @@
 }
 
 .navbar {
+    margin: auto;
     width: 100%; /* Responsiv width */
     max-width: 1160px;
     height: 59.5px;
@@ -197,6 +198,19 @@ li a {
     .navbar{
         width: 90%;
     }   
+    .dropdown{
+        display: none;
+    }
+    .custom-button{
+        display: none;
+    }
+    .media-button{
+        display: block;
+        font-size: 27px;
+        margin-top: 3px;
+        margin-right: 5px;
+        color:white;
+    }
     .navbar-ul{
         display: none;
     }
