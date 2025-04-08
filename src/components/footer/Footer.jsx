@@ -14,10 +14,15 @@ const Footer = () => {
         </div>
         <div className='footer-icon'>
           <div className='icon-1'>
+            <a href="https://telegram.com">
+
+            </a>
           <i class="fa-brands fa-instagram"></i>
           </div>
           <div className="icon-2">
+            <a href="https://www.instagram.com/aqvo_jiz/">
           <i class="fa-brands fa-telegram"></i>
+            </a>
           </div>
         </div>
         <div className='footer-title'>
