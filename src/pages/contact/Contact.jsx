@@ -13,7 +13,57 @@ const Contact = () => {
   const [fileds, setFileds] = useState("");
   const [choes, setChoes] = useState("");
   const [text, setText] = useState("");
-  const [setError]=useState('')
+  const [error,setError]=useState('')
+  const [nameError, setNameError] = useState("");
+const [surnameError, setSurnameError] = useState("");
+const [phoneError, setPhoneError] = useState("");
+const [usernameError, setUsernameError] = useState("");
+const [fieldsError, setFieldsError] = useState("");
+const [choiceError, setChoiceError] = useState("");
+const [textError, setTextError] = useState("");
+
+
+const validateFullData = () => {
+  let isValid = true;
+
+  if (!name.trim()) {
+    setNameError("Iltimos, ismingizni kiriting");
+    isValid = false;
+  } else setNameError("");
+
+  if (!surname.trim()) {
+    setSurnameError("Iltimos, familyangizni kiriting");
+    isValid = false;
+  } else setSurnameError("");
+
+  if (!phone.trim()) {
+    setPhoneError("Iltimos, telefon raqamingizni kiriting");
+    isValid = false;
+  } else setPhoneError("");
+
+  if (!username.trim()) {
+    setUsernameError("Iltimos, foydalanuvchi nomini kiriting");
+    isValid = false;
+  } else setUsernameError("");
+
+  if (!fileds.trim()) {
+    setFieldsError("Iltimos, hududni kiriting");
+    isValid = false;
+  } else setFieldsError("");
+
+  if (!choes.trim()) {
+    setChoiceError("Iltimos, tanlovni belgilang");
+    isValid = false;
+  } else setChoiceError("");
+
+  if (!text.trim()) {
+    setTextError("Iltimos, xabarni kiriting");
+    isValid = false;
+  } else setTextError("");
+
+  return isValid;
+};
+
 
   const { l } = useContext(LanguageContext);
 
@@ -23,13 +73,8 @@ const Contact = () => {
 
   const sendMessage = async () => {
 
-    const errorMessage=validateFullData(name,surname,phone,username,fileds,choes,text)
-    if(errorMessage){
-      setError(errorMessage)
-      return
-    }
-    setError('')
-
+    if(!validateFullData())
+      return;
     const message = `
 📩 *Yangi Xabar*  
 👤 *Ism:* ${name}  
@@ -80,6 +125,7 @@ const Contact = () => {
             </div>
             <div className="contact-register">
               <div className="input-container">
+                <div>
                 <input
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -87,7 +133,7 @@ const Contact = () => {
                   className="input-style"
                   placeholder={l.name}
                 />
-                
+                </div>
                 <input
                   value={surname}
                   onChange={(e) => setSurname(e.target.value)}
@@ -95,6 +141,11 @@ const Contact = () => {
                   className="input-style"
                   placeholder={l.surname}
                 />
+              </div>
+              <div style={{display:"flex",justifyContent:"space-between",width:"100%",height:'15px'}}>
+              <small style={{color:'red'}}>{nameError}</small>
+              <small style={{color:'red'}}>{surnameError}</small>
+
               </div>
               <div className="input-container">
                 <input
@@ -111,6 +162,11 @@ const Contact = () => {
                   className="input-style"
                   placeholder={l.username}
                 />
+              </div>
+              <div style={{display:"flex",justifyContent:"space-between",width:"100%",height:'15px'}}>
+              <small style={{color:'red'}}>{phoneError}</small>
+              <small style={{color:'red'}}>{usernameError}</small>
+
               </div>
               <div className="input-container">
                 <input
@@ -133,8 +189,13 @@ const Contact = () => {
                   </option>
                 </select>
               </div>
+              <div style={{display:"flex",justifyContent:"space-between",width:"100%",height:'15px'}}>
+              <small style={{color:'red'}}>{fieldsError}</small>
+              <small style={{color:'red'}}>{choiceError}</small>
+
+              </div>
               <div className="input-container-area">
-                <textarea
+                <textarea 
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   type="text"
@@ -142,6 +203,7 @@ const Contact = () => {
                   placeholder={l.text}
                 ></textarea>
               </div>
+              <small style={{color:'red'}}>{textError}</small>
               <div className="submit-button">
                 <button onClick={sendMessage}>{l.send}</button>
               </div>

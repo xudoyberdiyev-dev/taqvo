@@ -14,8 +14,8 @@ const AutoSlider = () => {
             <p className='info' style={{color:"wheat"}}>{l.avtoSliderTitle}</p>
             </div>
             <div className='info-btn'>
-              <button><a href="#">{l.avtoSliderInsta}</a></button>
-              <button><a href="#">{l.avtoSliderTg}</a></button>                
+              <button><a href="https://www.instagram.com/aqvo_jiz/">{l.avtoSliderInsta}</a></button>
+              <button><a href="https://www.telegram.com">{l.avtoSliderTg}</a></button>                
             </div>
            </div>
         </div>

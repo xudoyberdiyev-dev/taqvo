@@ -103,6 +103,9 @@
     width: 100%;
     padding-top: 50px;
 }
+textarea{
+    resize: none; /* ⚠️ Bu joy foydalanuvchi kattalashtirish imkonini yo'q qiladi */
+}
 
 .input-style-area {
     background: transparent;
