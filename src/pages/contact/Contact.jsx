@@ -3,7 +3,6 @@ import "./contact.css";
 import { LanguageContext } from "../../utils/LanguageContext";
 import toast from "react-hot-toast";
 import axios from "axios";
-import { validateFullData } from "../../utils/validate";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -13,7 +12,6 @@ const Contact = () => {
   const [fileds, setFileds] = useState("");
   const [choes, setChoes] = useState("");
   const [text, setText] = useState("");
-  const [error,setError]=useState('')
   const [nameError, setNameError] = useState("");
 const [surnameError, setSurnameError] = useState("");
 const [phoneError, setPhoneError] = useState("");
