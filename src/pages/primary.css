@@ -84,7 +84,7 @@
 .logo-circle::after {
     content: attr(data-text);
     color: white;
-    font-size: 2vw; /* Font size responsive to screen size */
+    font-size: 1.4vw; /* Font size responsive to screen size */
     position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
