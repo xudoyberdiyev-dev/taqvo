@@ -1,149 +1,230 @@
-.about-section{
+/* === ASL STYLLAR (unchanged) === */
+.about-section {
     width: 100%;
     height: auto;
-    background-color:#991B1B;
+    background-color: #991B1B;
     padding: 0px 220px 0px 240px;
     padding-top: 8%;
 }
-.box-title{
+
+.box-title {
     width: 100%;
     height: 42px;
 }
-.back-and-title{
+
+.back-and-title {
     width: 100vw;
     max-width: 100%;
     height: 100%;
     display: flex;
 }
-.back-button{
+
+.back-button {
     width: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.back-button i{
+
+.back-button i {
     font-size: 25px;
     color: white;
     cursor: pointer;
-    
 }
-.back-button:hover{
+
+.back-button:hover {
     border-radius: 50%;
     background-color: rgb(187, 94, 0);
 }
-.title-about{
+
+.title-about {
     width: 96%;
 }
-.title-about p{
+
+.title-about p {
     text-align: center;
     font-size: 32px;
     color: white;
 }
 
-
-/*  */
-.box-1{
+.box-1 {
     width: 100%;
     height: auto;
     margin-top: 40px;
 }
-.boox{
+
+.boox {
     width: 100%;
     height: 402px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.img-box{
+
+.img-box {
     width: 49%;
     height: 100%;
 }
-.img-box img{
+
+.img-box img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
 }
-.titless{
+
+.titless {
     width: 48%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.titles-1{
+
+.titles-1 {
     width: 100%;
     height: 48%;
 }
-.titles-1 p{
+
+.titles-1 p {
     font-size: 25px;
     line-height: 2.2rem;
     color: white;
 }
-.titles-2{
+
+.titles-2 {
     width: 100%;
     height: 48%;
 }
-.titles-2 p{
+
+.titles-2 p {
     font-size: 16px;
     font-weight: bold;
     line-height: 18px;
     color: white;
 }
-.box-2{
+
+.box-2 {
     width: 100%;
     height: auto;
     margin-top: 60px;
 }
-.box-3{
+
+.box-3 {
     width: 100%;
     height: auto;
     margin-top: 60px;
 }
-.img-and-text{
+
+.img-and-text {
     width: 100%;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.imgs{
+
+.imgs {
     width: 100vw;
     max-width: 100%;
-    height:49%;
+    height: 49%;
 }
-.imgs img{
+
+.imgs img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
-.text-img{
+
+.text-img {
     width: 100%;
     height: 40%;
 }
-.text-img p{
+
+.text-img p {
     line-height: 22px;
     color: white;
     font-size: 17px;
 }
-.box-4{
+
+.box-4 {
     margin-top: 60px;
     width: 100%;
-    height: auto;   
+    height: auto;
 }
-.cvc-title{
+
+.cvc-title {
     font-size: 27px;
     color: white;
     text-align: center;
 }
 
-.cvc{
+.cvc {
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.cvc img{
+
+.cvc img {
     width: 23%;
     height: auto;
-    
+}
+
+/* === RESPONSIVE: 960px dan kichik — 2 ta ustun === */
+@media (max-width: 960px) {
+    .about-section {
+        padding: 0px 60px;
+        padding-top: 8%;
+    }
+
+    .back-and-title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .back-button {
+        width: 100%;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    .title-about {
+        width: 100%;
+    }
+
+    .boox {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-box,
+    .titless {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .cvc img {
+        width: 48%;
+    }
+}
+
+/* === RESPONSIVE: 600px dan kichik — 1 ta ustun (tagma-tag) === */
+@media (max-width: 600px) {
+    .about-section {
+        padding: 0px 20px;
+        padding-top: 8%;
+    }
+
+    .cvc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cvc img {
+        width: 100%;
+    }
 }

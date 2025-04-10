@@ -136,7 +136,7 @@ const Navbar = () => {
         <div className="navbar">
           <div className="navbar-ul">
             <ul>
-              <li><a href="#">{l.navTile1}</a></li>
+              <li><Link to="/">{l.navTile1}</Link></li>
               <li><Link to={'/about'} >{l.navtitle2}</Link></li>
             </ul>
           </div>
