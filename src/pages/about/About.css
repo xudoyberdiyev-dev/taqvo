@@ -2,9 +2,9 @@
 .about-section {
     width: 100%;
     height: auto;
-    background-color: #991B1B;
-    padding: 0px 220px 0px 240px;
-    padding-top: 8%;
+    background-color: hsl(0, 70%, 35%);
+    padding: 8% calc(10vw + 1px); /* Moslashuvchan padding */
+    box-sizing: border-box;
 }
 
 .box-title {
