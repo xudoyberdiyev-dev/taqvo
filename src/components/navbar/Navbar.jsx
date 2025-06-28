@@ -90,9 +90,9 @@ const Navbar = () => {
   
   
   
-    const TELEGRAM_BOT_TOKEN = "7954710522:AAH1CTOhqSStEyRvDJCxFNRcr6eCoE5y4LU"; // Bot token
-    const CHAT_ID = "-1002556923288"; // Olingan kanal ID
-    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+      const TELEGRAM_BOT_TOKEN = "7954710522:AAH1CTOhqSStEyRvDJCxFNRcr6eCoE5y4LU"; // Bot token
+      const CHAT_ID = "-1002556923288"; // Olingan kanal ID
+      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
   
     const sendMessage = async () => {
   
